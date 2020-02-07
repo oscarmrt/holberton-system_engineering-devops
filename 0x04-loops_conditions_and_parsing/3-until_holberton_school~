@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-
-x=0
-until [ $x -eq 10 ]; do
-    echo "Holberton School"
-    let x=$(( $x + 1 ))
-done
