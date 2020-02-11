@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# This script is displaying its own PID
-
-pidof 0-what-is-my-pid

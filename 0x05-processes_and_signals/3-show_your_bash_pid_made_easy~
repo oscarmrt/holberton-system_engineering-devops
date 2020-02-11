@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# This script is as number 1 but only displaying lines containing "bash" word
-# shellcheck disable=SC2009
-
-ps -afux | grep "bash"
