@@ -1,6 +1,6 @@
 # This file creates file named holberton on /tmp/
 
-file { "/tmp/holberton":
+file { "holberton":
 path    => "/tmp/holberton",
 mode    => "0744",
 owner   => "www-data",
