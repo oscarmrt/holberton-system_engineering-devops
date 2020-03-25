@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Debugging Apache on container
+# Debugging Apache on container. Solution in script
 
 sudo service apache2 start
