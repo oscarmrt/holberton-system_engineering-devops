@@ -4,7 +4,7 @@
 file_line { 'Turn off password aut':
     ensure => present,
     path   => 'etc/ssh/ssh_config',
-    line   => 'PasswordAuthentication no',
+    line   => ' PasswordAuthentication no',
     match  => 'PasswordAuthentication yes',
 }
 
