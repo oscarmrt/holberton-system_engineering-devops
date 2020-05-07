@@ -17,7 +17,11 @@ def top_ten(subreddit):
                AppleWebKit/537.36 (KHTML, like Gecko)\
                Chrome/70.0.3538.77 Safari/537.36'}
     r = requests.get(url.format(subreddit), headers=headers,
-                     params={'limit': 10}, allow_redirects=False).json()
-    tenPosts = r.get('data', {}).get('children', None)
-    for post in tenPosts:
-        print(post.get('data', {}).get('title', None))
+                     params={'limit': 10}, allow_redirects=False)
+    if str(r) != '<Response [200]>':
+        print(None)
+    else:
+        rjson = r.json()
+        tenPosts = rjson.get('data', {}).get('children', None)
+        for post in tenPosts:
+            print(post.get('data', {}).get('title', None))
