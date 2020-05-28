@@ -5,6 +5,7 @@ exec{'nginxFix':
       provider => 'shell'
 }
 exec{'nginxRestart':
-  command  => 'sudo service nginx restart',
-  provider => 'shell'
+      command  => 'sudo service nginx restart',
+      provider => 'shell',
+      require  => Exec['nginxFix']
 }
