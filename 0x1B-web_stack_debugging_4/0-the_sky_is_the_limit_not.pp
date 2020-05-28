@@ -1,7 +1,7 @@
 # This puppet script fixes nginx configuation
 
 exec{'nginxFix':
-      command  => 'sed -i "s/-n 15/-n 5700/g" /etc/default/nginx',
+      command  => 'sed -i "s/-n 15/-n 3700/g" /etc/default/nginx',
       provider => 'shell'
 }
 exec{'nginxRestart':
